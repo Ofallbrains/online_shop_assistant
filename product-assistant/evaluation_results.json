@@ -1,0 +1,17 @@
+[
+  {
+    "input": "What is the price of P002?",
+    "expected": "Correctly reports 15,000 RWF.",
+    "actual": "The price of P002 (Wireless Mouse) is **15,000 RWF**."
+  },
+  {
+    "input": "Find the laptop",
+    "expected": "Returns the laptop's catalogue details.",
+    "actual": "I'd be happy to help you find a laptop! However, I need a bit more information to search effectively. Could you please provide:\n\n1. **Product name or type** - Are you looking for a specific brand (e.g., Dell, HP, Lenovo, Apple) or a specific model?\n2. **Any other details** - Such as screen size, specifications, or price range?\n\nAlternatively, if you have a product ID, I can search for that directly.\n\nPlease share any details you have, and I'll search our catalogue for you!"
+  },
+  {
+    "input": "What is the price of P999?",
+    "expected": "Clearly reports that the product does not exist.",
+    "actual": "The product P999 was not found in our catalogue. This product does not appear to exist in our system, so I cannot provide a price for it. \n\nWould you like me to help you search for a different product?"
+  }
+]

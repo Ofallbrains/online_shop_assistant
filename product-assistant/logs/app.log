@@ -1,0 +1,117 @@
+2026-10-27 20:03:10,918 | INFO | agent | Request started
+2026-10-27 20:03:13,322 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:03:13,466 | INFO | agent | Tool called: check_price
+2026-10-27 20:03:13,468 | INFO | tools | Price checked for P002
+2026-10-27 20:03:14,447 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:03:14,451 | INFO | agent | Request completed latency_seconds=3.532
+2026-10-27 20:03:14,453 | INFO | agent | Request started
+2026-10-27 20:03:15,739 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:03:15,742 | INFO | agent | Tool called: search_product
+2026-10-27 20:03:15,745 | INFO | tools | search_product query=laptop matches=1
+2026-10-27 20:03:17,111 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:03:17,122 | INFO | agent | Request completed latency_seconds=2.669
+2026-10-27 20:03:17,139 | INFO | agent | Request started
+2026-10-27 20:03:18,343 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:03:18,346 | INFO | agent | Tool called: check_price
+2026-10-27 20:03:18,347 | WARNING | tools | Unknown product ID: P999
+2026-10-27 20:03:19,362 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:03:19,365 | INFO | agent | Request completed latency_seconds=2.226
+2026-10-27 20:07:53,288 | INFO | agent | Request started
+2026-10-27 20:07:55,384 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:07:55,509 | INFO | agent | Tool called: check_price
+2026-10-27 20:07:55,510 | INFO | tools | Price checked for P002
+2026-10-27 20:07:56,356 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:07:56,366 | INFO | agent | Request completed latency_seconds=3.078
+2026-10-27 20:07:56,372 | INFO | agent | Request started
+2026-10-27 20:07:57,841 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:07:57,853 | INFO | agent | Tool called: search_product
+2026-10-27 20:07:57,858 | INFO | tools | search_product query=laptop matches=1
+2026-10-27 20:07:59,017 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:07:59,028 | INFO | agent | Request completed latency_seconds=2.656
+2026-10-27 20:07:59,033 | INFO | agent | Request started
+2026-10-27 20:08:00,320 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:08:00,332 | INFO | agent | Tool called: check_price
+2026-10-27 20:08:00,335 | WARNING | tools | Unknown product ID: P999
+2026-10-27 20:08:01,473 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:08:01,484 | INFO | agent | Request completed latency_seconds=2.450
+2026-10-27 20:08:02,062 | INFO | deepeval.evaluate.execute.e2e | in _a_execute_llm_test_cases
+2026-10-27 20:08:02,160 | INFO | deepeval.evaluate.execute.e2e | in _a_execute_llm_test_cases
+2026-10-27 20:08:02,538 | INFO | deepeval.evaluate.execute.e2e | in _a_execute_llm_test_cases
+2026-10-27 20:11:14,426 | INFO | agent | Request started
+2026-10-27 20:11:16,368 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:11:16,675 | INFO | agent | Tool called: check_price
+2026-10-27 20:11:16,774 | INFO | tools | Price checked for P002
+2026-10-27 20:11:17,634 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:11:17,641 | INFO | agent | Request completed latency_seconds=3.215
+2026-10-27 20:11:17,651 | INFO | agent | Request started
+2026-10-27 20:11:20,033 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:11:20,037 | INFO | agent | Request completed latency_seconds=2.387
+2026-10-27 20:11:20,042 | INFO | agent | Request started
+2026-10-27 20:11:21,278 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:11:21,281 | INFO | agent | Tool called: check_price
+2026-10-27 20:11:21,283 | WARNING | tools | Unknown product ID: P999
+2026-10-27 20:11:22,515 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:11:22,519 | INFO | agent | Request completed latency_seconds=2.477
+2026-10-27 20:11:24,387 | INFO | deepeval.evaluate.execute.e2e | in _a_execute_llm_test_cases
+2026-10-27 20:11:24,500 | INFO | deepeval.evaluate.execute.e2e | in _a_execute_llm_test_cases
+2026-10-27 20:11:24,588 | INFO | deepeval.evaluate.execute.e2e | in _a_execute_llm_test_cases
+2026-10-27 20:11:26,328 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:11:26,945 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:11:27,101 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:11:27,155 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:11:27,391 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:11:27,397 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:11:27,403 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:11:27,507 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:11:27,628 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:11:28,162 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:11:29,211 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:11:29,331 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:11:29,415 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:11:29,559 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:11:30,521 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:11:31,222 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:11:31,388 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:11:31,580 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:11:31,583 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:11:31,809 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:11:33,680 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:28:59,913 | INFO | __main__ | Request started
+2026-10-27 20:29:02,501 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:29:02,690 | INFO | __main__ | Tool called: check_price
+2026-10-27 20:29:02,692 | INFO | tools | Price checked for P001
+2026-10-27 20:29:03,627 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:29:03,630 | INFO | __main__ | Request completed latency_seconds=3.718
+2026-10-27 20:29:10,050 | INFO | __main__ | Request started
+2026-10-27 20:29:11,410 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:29:11,413 | INFO | __main__ | Tool called: search_product
+2026-10-27 20:29:11,415 | INFO | tools | search_product query=wireless mouse matches=1
+2026-10-27 20:29:12,844 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:29:13,052 | INFO | __main__ | Request completed latency_seconds=3.002
+2026-10-27 20:29:20,247 | INFO | __main__ | Request started
+2026-10-27 20:29:21,650 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:29:21,654 | INFO | __main__ | Tool called: check_price
+2026-10-27 20:29:21,655 | INFO | tools | Price checked for P003
+2026-10-27 20:29:22,573 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:29:22,576 | INFO | __main__ | Request completed latency_seconds=2.329
+2026-10-27 20:29:28,861 | INFO | __main__ | Request started
+2026-10-27 20:29:30,254 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:29:30,258 | INFO | __main__ | Tool called: search_product
+2026-10-27 20:29:30,260 | INFO | tools | search_product query=headphones matches=1
+2026-10-27 20:29:31,650 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:29:31,663 | INFO | __main__ | Request completed latency_seconds=2.803
+2026-10-27 20:29:38,724 | INFO | __main__ | Request started
+2026-10-27 20:29:40,823 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:29:40,826 | INFO | __main__ | Tool called: check_price
+2026-10-27 20:29:40,827 | INFO | tools | Price checked for P005
+2026-10-27 20:29:41,924 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:29:41,927 | INFO | __main__ | Request completed latency_seconds=3.203
+2026-10-27 20:33:12,647 | INFO | __main__ | Request started
+2026-10-27 20:33:14,913 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:33:15,016 | INFO | __main__ | Request completed latency_seconds=2.370
+2026-10-27 20:35:04,332 | INFO | __main__ | Request started
+2026-10-27 20:35:05,809 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:35:06,220 | INFO | __main__ | Tool called: check_price
+2026-10-27 20:35:06,231 | WARNING | tools | Unknown product ID: P999
+2026-10-27 20:35:07,345 | INFO | httpx2 | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-10-27 20:35:07,348 | INFO | __main__ | Request completed latency_seconds=3.016
