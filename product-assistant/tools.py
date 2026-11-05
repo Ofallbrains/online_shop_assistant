@@ -23,7 +23,13 @@ def load_products():
 def search_product(query: str) -> str:
     """this tool searches the product catalogue by product ID, name or description
     """
-    products = load_products()
+    try:
+        products = load_products()
+    except (OSError, json.JSONDecodeError) as error:
+        logging.error("Unable to load product catalogue: %s", error)
+        return "Product catalogue is currently unavailable."
+    query = query.strip().lower()
+    
     matches = [
         product
         for product in products
