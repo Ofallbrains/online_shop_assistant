@@ -1,80 +1,52 @@
-
-import json
+from langchain.tools import tool
 import logging
+from dotenv import load_dotenv
+import json
 from pathlib import Path
 
-logger = logging.getLogger(__name__)
+load_dotenv()
 
-PRODUCTS_FILE = Path(__file__).with_name("products.json")
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s"
+)
 
+
+PRODUCTS_FILE = Path(__file__).parent / "products.json"
 
 def load_products():
-    try:
-        with open(PRODUCTS_FILE, "r", encoding="utf-8") as file:
-            return json.load(file)
-    except FileNotFoundError:
-        logging.error("Product catalogue file was not found: %s", PRODUCTS_FILE)
-        raise
-    except json.JSONDecodeError:
-        logging.error("Product catalogue contains invalid JSON.")
-        raise
-
+    """Load products from products.json"""
+    with open(PRODUCTS_FILE, "r", encoding="utf-8") as file:
+        return json.load(file)
+    
+@tool
 def search_product(query: str) -> str:
-    try:
-        products = load_products()
-        query = query.strip().lower()
-
-        matches = [
-            product for product in products
-            if query in product["id"].lower()
-            or query in product["name"].lower()
-            or query in product["description"].lower()
-        ]
-
-        logger.info(
-            "search_product query=%s matches=%d",
-            query, len(matches)
+    """this tool searches the product catalogue by product ID, name or description
+    """
+    products = load_products()
+    matches = [
+        product
+        for product in products
+        if (
+            query in product["id"].lower() or query in product["name"].lower() or query in product["description"].lower()
         )
+    ]
+    if not matches: 
+        return {"status": f"No product found matching '{query}'"}
+    
+    return matches
 
-        if not matches:
-            return "Product not found."
-
-        return json.dumps(matches, ensure_ascii=False)
-
-    except Exception:
-        logger.exception("Product search failed")
-        return "Unable to search products right now."
-
-
+@tool
 def check_price(product_id: str) -> str:
-    try:
-        products = load_products()
-        product_id = product_id.strip().upper()
+    """this tool checks the actual price of the product using its product ID"""
+    products = load_products()
+    product_id = product_id.upper()
+    for product in products:
+        if product["id"] == product_id:
+            return f"Price : {product['price']:,} RWF"
+    
+    return f"Product {product_id} not found in the catalogue"
 
-        product = next(
-            (
-                item for item in products
-                if item["id"].upper() == product_id
-            ),
-            None
-        )
 
-        if product is None:
-            logger.warning(
-                "Unknown product ID: %s", product_id
-            )
-            return (
-                f"Product {product_id} not found. "
-                "No price is available."
-            )
-
-        logger.info("Price checked for %s", product_id)
-
-        return (
-            f'{product["name"]} (ID {product["id"]}) '
-            f'costs {product["price"]:,} RWF.'
-        )
-
-    except Exception:
-        logger.exception("Price check failed")
-        return "Unable to check the price right now."
+# print(search_product.invoke("laptop"))
+# print(check_price.invoke("P005"))
