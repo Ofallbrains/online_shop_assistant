@@ -6,10 +6,7 @@ from pathlib import Path
 
 load_dotenv()
 
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s"
-)
+logger = logging.getLogger(__name__)
 
 
 PRODUCTS_FILE = Path(__file__).parent / "products.json"
@@ -23,10 +20,11 @@ def load_products():
 def search_product(query: str) -> str:
     """this tool searches the product catalogue by product ID, name or description
     """
+    logger.info("Tool call started | tool=search_product")
     try:
         products = load_products()
     except (OSError, json.JSONDecodeError) as error:
-        logging.error("Unable to load product catalogue: %s", error)
+        logger.exception("Tool call failed | tool=search_product")
         return "Product catalogue is currently unavailable."
     query = query.strip().lower()
     
@@ -45,6 +43,7 @@ def search_product(query: str) -> str:
 @tool
 def check_price(product_id: str) -> str:
     """this tool checks the actual price of the product using its product ID"""
+    logger.info("Tool call started | tool=check_price | product_id=%s", product_id)
     products = load_products()
     product_id = product_id.upper()
     for product in products:
