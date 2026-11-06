@@ -1,1 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.deepeval/
+logs/
+*.log
 .env
+evaluation_results.json
